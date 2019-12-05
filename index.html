@@ -15,15 +15,29 @@
 </head>
 
 <body>
-	<article class="container">
+	<nav class="navbar navbar-light bg-light navbar-expand-sm">
+		<a href="/" class="navbar-brand">Whiskey Drop</a>
+		<ul class="navbar-nav mr-auto">
+			<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+			<li class=" nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+			<li class=" nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+		</ul>
+		<div class="d-none d-md-block">
+			<p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+			<a href="/login">Sign In / Sign Up</a>
+		</div>
+	</nav>
+	<article class="container mt-3">
 		<!-- Callout -->
 		<div class="row">
 			<div class="col-12">
-				<section class="callout">
+				<section class="callout jumbotron text-center">
 					<h1>The finest whiskeys delivered to your doorstep.</h1>
 					<p class="lead">
 						Sign up today to start receiving the world's best whiskeys every month.
-						<s>€19.99</s> <strong><mark>First one is free!</mark></strong>
+						<s class="d-none d-sm-inline">€19.99</s>
+						<span class="d-inline d-sm-none"><br></span>
+						<strong><mark>First one is free!</mark></strong>
 					</p>
 					<button class="btn btn-success btn-lg">Sign Up!</button>
 					<p class="text-muted">
@@ -38,22 +52,35 @@
 		<!-- Quotes -->
 		<section class="quotes">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 my-5">
 					<h2 class="text-uppercase">Quotes:</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-6">
-					<blockquote class="blockquote">
-						<p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-						<footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-					</blockquote>
+					<div class="media">
+						<img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="rounded-circle mr-3" height=100 width=100>
+						<div class="media-body">
+							<blockquote class="blockquote">
+								<p>I've been introduced to more than 10 great international whiskeys I never knew about.
+								</p>
+								<footer class="blockquote-footer">Jenny Docifer on <cite title="Twitter">Twitter</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
 				</div>
 				<div class="col-12 col-md-6">
-					<blockquote class="blockquote">
-						<p>I haven't been sober for months!</p>
-						<footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-					</blockquote>
+					<div class="media">
+						<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="rounded-circle mr-3" height=100 width=100>
+						<div class="media-body">
+							<blockquote class="blockquote">
+								<p>I haven't been sober for months!</p>
+								<footer class="blockquote-footer">Jonathon Doseph on <cite title="Twitter">Twitter</cite>
+								</footer>
+							</blockquote>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -63,12 +90,12 @@
 		<!-- Features -->
 		<section class="features">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 my-5">
 					<h2 class="text-uppercase">Features:</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
 						<h3>Feature 1</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -80,7 +107,7 @@
 						<p><a class="btn btn-small btn-light" href="">Read More</a></p>
 					</div>
 				</div>
-				<div class="col-12  col-md-6">
+				<div class="col-12  col-md-6 col-lg-4">
 					<div class="feature">
 						<h3>Feature 2</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -92,7 +119,7 @@
 						<p><a class="btn btn-small btn-light" href="">Read More</a></p>
 					</div>
 				</div>
-				<div class="col-12 d-md-none">
+				<div class="col-12 d-md-none d-lg-block col-lg-4">
 					<div class="feature">
 						<h3>Feature 3</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -111,7 +138,11 @@
 
 		<!-- Monthly Specials -->
 		<section class="specials">
-			<h2 class="text-uppercase">Monthly Specials:</h2>
+			<div class="row">
+				<div class="col-12 my-5">
+					<h2 class=" text-uppercase">Monthly Specials:</h2>
+				</div>
+			</div>
 			<table class="table">
 				<tr>
 					<th>Name</th>
@@ -142,7 +173,11 @@
 		</section>
 		<!-- /.monthly specials -->
 		<hr>
-		&copy 2019 elkrojo
+		<div class="text-center">
+			<div class="copyright">
+				&copy 2019 elkrojo
+			</div>
+		</div>
 	</article>
 </body>
 
