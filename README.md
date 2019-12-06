@@ -10,7 +10,7 @@ This website uses bootstrap to style the elements and add functionality.
 ### <u>HTML</u>
 Structure put in place with HTML.
 ### <u>Bootstrap</u>
-Bootstrap library used to implement tasteful aesthetic presentation.  
+Bootstrap library used to implement tasteful aesthetic presentation and functionality.  
 <hr>
 
 ## Description
