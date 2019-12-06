@@ -15,11 +15,31 @@
 <body>
 	<nav class="navbar navbar-light bg-light navbar-expand-sm">
 		<a href="/" class="navbar-brand">Whiskey Drop</a>
-		<ul class="navbar-nav mr-auto">
-			<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-			<li class=" nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-			<li class=" nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
-		</ul>
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span></button>
+
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+			<ul class="navbar-nav mr-auto">
+				<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+				<li class=" nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+				<li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+						role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Whiskeys
+					</a>
+
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Irish</a>
+						<a class="dropdown-item" href="#">Scottish</a>
+						<a class="dropdown-item" href="#">Japanese</a>
+						<a class="dropdown-item" href="#">American</a>
+					</div>
+				</li>
+				<li class=" nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a>
+				</li>
+			</ul>
+		</div>
 		<div class="d-none d-md-block">
 			<p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
 			<a href="/login">Sign In / Sign Up</a>
@@ -45,7 +65,7 @@
 						<span class="d-inline d-sm-none"><br></span>
 						<strong><mark>First one is free!</mark></strong>
 					</p>
-					<button class="btn btn-success btn-lg">Sign Up!</button>
+					<button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
 					<p class="text-muted">
 						<small>You must be over 18 to sign up to our service. Please, drink responsibly.</small>
 					</p>
@@ -70,8 +90,8 @@
 						</div>
 							<div class="media-body">
 								<blockquote class="blockquote">
-									<p>I've been introduced to more than 10 great international whiskeys I never knew
-										about.
+									<p>When I drink hard liquer, heaven releases a choir of angels. In the morning, hell
+										releases a gang of angle grinders.
 									</p>
 									<footer class="blockquote-footer">Jenny Docifer on
 										<cite title="Twitter">Twitter</cite>
@@ -87,7 +107,7 @@
 							</div>
 								<div class="media-body">
 									<blockquote class="blockquote">
-										<p>I haven't been sober for months!</p>
+										<p>Just sold the family home. I need help!</p>
 										<footer class="blockquote-footer">Jonathon Doseph on
 											<cite title="Twitter">Twitter</cite>
 										</footer>
@@ -194,6 +214,42 @@
 			</div>
 		</div>
 	</article>
+
+	<div class="modal" tabindex="-1" role="dialog" id="signUpModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Check me out</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
