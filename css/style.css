@@ -2,12 +2,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {}
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    text-align: center;
+    background-color: #cfa900;
+    border-color: #cfa900;
+}
 
 .callout-container {
     height: 100vh;
-
-    /* background: url("https://images.unsplash.com/photo-1542741081-bc7afc3480fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80") no-repeat center center fixed;  */
     background: url("https://c.pxhere.com/photos/19/4d/drink_alcohol_cup_whiskey_the_drink-941469.jpg!d")
                     no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -37,6 +47,37 @@ body {
 .features-container {}
 
 .specials-container {}
+
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left:0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
 
 /* Jumbotron */
 
@@ -85,7 +126,7 @@ body {
 }
 
 .btn--red {
-    color: white;
+    color: #fff;
     background-color: #f05f40;
     border-color: #f05f40;
 
@@ -98,4 +139,8 @@ body {
     background-color: #b12f13;
     border-color: #b12f13;
 
+}
+
+a:hover, a:focus {
+    color: #fff;
 }
