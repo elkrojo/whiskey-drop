@@ -12,6 +12,11 @@ body {
     color: #fff;
 }
 
+.container-wrapper--grey {
+    background-color: #4d4d4d;
+    color: #fff;
+}
+
 .alert-container .col-12 {
     padding-left: 0;
     padding-right: 0;
