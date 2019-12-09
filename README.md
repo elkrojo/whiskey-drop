@@ -5,7 +5,7 @@ Landing page for whiskey subscription service.
 <hr>
 
 ## Technology
-This website uses bootstrap to style the elements and add functionality.
+This website makes use of HTML, CSS and Bootstrap.
 
 ### <u>HTML</u>
 Structure put in place with HTML.
