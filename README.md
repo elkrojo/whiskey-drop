@@ -11,8 +11,10 @@ This website uses bootstrap to style the elements and add functionality.
 Structure put in place with HTML.
 ### <u>Bootstrap</u>
 Bootstrap library used to implement tasteful aesthetic presentation and functionality.  
+### <u>CSS</u>
+Custom CSS added to produce a more bespoke appearance.
 <hr>
 
 ## Description
 
-Users are given an easy to navigate webpage which translates to multiple devices sizes.
+Users are given an easy to navigate webpage which translates to multiple device sizes.
